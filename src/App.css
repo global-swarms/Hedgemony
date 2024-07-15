@@ -38,10 +38,10 @@ nav {
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 50px;
-  background: linear-gradient(135deg, #1B2030 0%, #2A3040 100%), url('/hero-background.jpg');
+  background: linear-gradient(135deg, #1B2030 0%, #2A3040 100%), url('./hero-background.jpg');
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -54,20 +54,25 @@ nav {
   max-width: 50%;
 }
 
-.hero h1 {
+.hero h1.typing-text {
   font-size: 4em;
   margin-bottom: 20px;
+  background: linear-gradient(90deg, #F386FF 0%, #FCE3FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #2EBAC6;
+  color: #D1C5F5BF;
 }
 
 .hero p {
   font-size: 1.2em;
   margin-bottom: 30px;
+  color: #D1C5F5BF;
 }
 
 .hero-buttons {
