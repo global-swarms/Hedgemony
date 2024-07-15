@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import logo from './logo.svg';
+import logo from '.logo.svg';
 
 function App() {
   const [text, setText] = useState('');
