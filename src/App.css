@@ -13,6 +13,7 @@
   left: 0;
   right: 0;
   z-index: 2000;
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -22,11 +23,24 @@
 nav {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
+  padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
 }
 
 .soon-button {
@@ -59,7 +73,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 100px 50px 50px;
+  padding: 100px 5% 50px;
   background: url('./hero-background.jpg');
   background-size: cover;
   background-position: center;
@@ -69,16 +83,16 @@ nav {
 
 .hero-content {
   text-align: left;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .typing-container {
-  height: 1.2em; /* Adjust this value to match your desired height */
-  margin-bottom: 70px;
+  height: 1.2em;
+  margin-bottom: 40px;
 }
 
 .hero h1.typing-text {
-  font-size: 4em;
+  font-size: 3em;
   background: linear-gradient(90deg, #F386FF 0%, #FCE3FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,30 +101,50 @@ nav {
 }
 
 .hero h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 10px;
   color: #D1C5F5BF;
 }
 
 .hero p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
+  font-size: 1em;
+  margin-bottom: 20px;
   color: #D1C5F5BF;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 5% 30px;
+  }
+
+  .hero h1.typing-text {
+    font-size: 2em;
+  }
+
+  .hero h2 {
+    font-size: 1.2em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
 }
 
 .hero-buttons {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .btn {
-  padding: 15px 30px;
+  padding: 12px 24px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
-  border: 1px solid #F386FF ;
+  border: 1px solid #F386FF;
   background-color: transparent;
   transition: all 0.3s ease;
+  font-size: 0.9em;
 }
 
 .btn:hover {
@@ -120,7 +154,6 @@ nav {
 }
 
 .btn-primary {
-  
   color: white;
 }
 
@@ -128,10 +161,16 @@ nav {
   background: linear-gradient(90deg, #F386FF 0%, #FCE3FF 100%);
 }
 
-
 .hero-image {
-  max-width: 50%;
-  /* Add styles for your hero image or animation */
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
 }
 
 .footer {
@@ -145,9 +184,26 @@ nav {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .small-logo {
   height: 30px;
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .logo-text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .small-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
