@@ -50,6 +50,7 @@ nav {
   background-position: center;
   color: white;
   min-height: 100vh;
+  z-index: 1;
 }
 
 .hero-content {
