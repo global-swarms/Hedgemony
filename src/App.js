@@ -6,19 +6,18 @@ import Hero from './components/Hero';
 function App() {
   return (
     <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="Company logo" />
+        <nav>
+          <a href="#" className="nav-link">Products</a>
+          <a href="#" className="nav-link">Developers</a>
+          <a href="#" className="nav-link">Governance</a>
+          <a href="#" className="nav-link">Security</a>
+        </nav>
+        <a href="/docs" className="docs-button">Launch App</a>
+      </header>
       <main>
-        <Hero>
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="Company logo" />
-            <nav>
-              <a href="#" className="nav-link">Products</a>
-              <a href="#" className="nav-link">Developers</a>
-              <a href="#" className="nav-link">Governance</a>
-              <a href="#" className="nav-link">Security</a>
-            </nav>
-            <a href="/docs" className="docs-button">Launch App</a>
-          </header>
-        </Hero>
+        <Hero />
       </main>
       <footer className="footer">
         <div className="logo-text">
