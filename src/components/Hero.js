@@ -38,7 +38,9 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1 className="typing-text">{text}</h1>
+        <div className="typing-container">
+          <h1 className="typing-text">{text}</h1>
+        </div>
         <h2>User-Optimized Swap & Yield Aggregation</h2>
         <p>Navigate Volatility with Simplicity & Precision</p>
         <div className="hero-buttons">
