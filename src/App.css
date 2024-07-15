@@ -92,11 +92,25 @@ nav {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  border: 2px solid #2EBAC6;
+  color: #2EBAC6;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #F386FF 0%, #FCE3FF 100%);
+  color: white;
+  border-color: transparent;
 }
 
 .btn-primary {
   background-color: #2EBAC6;
   color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #F386FF 0%, #FCE3FF 100%);
 }
 
 
