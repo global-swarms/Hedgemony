@@ -33,7 +33,7 @@
 
 .hero {
   padding: 50px;
-  background-image: url('/path/to/hero-background.jpg');
+  background-image: url(/Users/anthonyawoyele/hedgemony/public/hero-background.jpg);
   background-size: cover;
   background-position: center;
   text-align: left;
