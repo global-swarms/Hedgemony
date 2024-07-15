@@ -62,6 +62,9 @@ function App() {
           </div>
         </section>
       </main>
+      <footer className="footer">
+        <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+      </footer>
     </div>
   );
 }

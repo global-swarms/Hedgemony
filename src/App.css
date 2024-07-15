@@ -33,8 +33,11 @@
 
 .hero {
   padding: 50px;
-  background-color: #e9ecef;
+  background-image: url('/path/to/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
   text-align: left;
+  color: white; /* Adjust text color to be visible on the background */
 }
 
 .hero h1 {
@@ -84,4 +87,13 @@
 .small-logo {
   height: 30px;
   margin-right: 10px;
+}
+
+.footer {
+  padding: 50px;
+  background-image: url('/path/to/footer-background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white; /* Adjust text color to be visible on the background */
+  text-align: center;
 }
