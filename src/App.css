@@ -40,18 +40,42 @@
   font-size: 3em;
   margin-bottom: 10px;
   height: 1.2em; /* Set a fixed height to prevent layout shifts */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.typed-cursor {
-  font-size: 3em;
-  opacity: 1;
-  animation: blink 0.7s infinite;
+.typing-effect {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+.typing-effect:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing-effect:nth-child(2) {
+  animation-delay: 3.5s;
+}
+
+.typing-effect:nth-child(3) {
+  animation-delay: 7s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
 .hero h2 {
