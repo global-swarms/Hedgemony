@@ -34,6 +34,7 @@
 .hero {
   padding: 50px;
   background-color: #e9ecef;
+  text-align: left;
 }
 
 .hero h1 {
@@ -41,7 +42,7 @@
   margin-bottom: 10px;
   height: 1.2em; /* Set a fixed height to prevent layout shifts */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -49,7 +50,6 @@
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
-  margin: 0 auto;
   letter-spacing: .15em;
   width: 0;
 }
