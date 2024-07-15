@@ -53,16 +53,15 @@ function App() {
           </h1>
           <h2>User-Optimized Swap & Yield Aggregation</h2>
           <p>Navigate Volatility with Simplicity & Precision</p>
+          
         </section>
-        <section className="under-construction">
-          <h2>Under Construction</h2>
+      </main>
+      <footer className="footer under-construction">
+      <h2>Website Under Construction</h2>
           <div className="logo-text">
             <img src={logo} alt="Logo" className="small-logo" />
             <span>| Next Gen Defi Aggregator on Monad</span>
           </div>
-        </section>
-      </main>
-      <footer className="footer">
         <p>&copy; 2023 Your Company Name. All rights reserved.</p>
       </footer>
     </div>
