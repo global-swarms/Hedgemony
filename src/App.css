@@ -1,5 +1,6 @@
 .App {
-  text-align: left;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .App-header {
@@ -7,99 +8,107 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: transparent;
+  background: #1B2030;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .App-logo {
-  height: 50px;
+  height: 40px;
 }
 
-.header-right {
+nav {
   display: flex;
-  align-items: center;
+  gap: 20px;
 }
 
-.social-icons {
-  margin-right: 20px;
+.nav-link {
+  color: white;
+  text-decoration: none;
 }
 
 .docs-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #2EBAC6;
   color: white;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 50px;
-  background-image: url(/Users/anthonyawoyele/hedgemony/public/hero-background.jpg);
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #1B2030 0%, #2A3040 100%);
+  color: white;
+  min-height: 80vh;
+}
+
+.hero-content {
   text-align: left;
-  color: #D1C5F5BF;
-  height: 80vh;
-  width: 100vw;
+  max-width: 50%;
 }
 
 .hero h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  height: 1.2em; /* Set a fixed height to prevent layout shifts */
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.typing-effect {
-  overflow: hidden;
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  letter-spacing: .15em;
-  animation: blink-caret .75s step-end infinite;
-}
-
-@keyframes blink-caret {
-  0% { border-color: transparent; }
-  50% { border-color: orange; }
-  100% { border-color: transparent; }
+  font-size: 4em;
+  margin-bottom: 20px;
 }
 
 .hero h2 {
   font-size: 2em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: #2EBAC6;
 }
 
 .hero p {
   font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
-.under-construction {
-  padding: 50px;
-  text-align: center;
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #2EBAC6;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #2EBAC6;
+  border: 2px solid #2EBAC6;
+}
+
+.hero-image {
+  max-width: 50%;
+  /* Add styles for your hero image or animation */
+}
+
+.footer {
+  padding: 20px;
+  background-color: #1B2030;
+  color: white;
 }
 
 .logo-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .small-logo {
   height: 30px;
   margin-right: 10px;
-}
-
-.footer {
-  padding: 50px;
-  background-color: #2f142f;
-  background-size: cover;
-  background-position: center;
-  color: white; /* Adjust text color to be visible on the background */
-  text-align: center;
 }
