@@ -41,7 +41,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 50px;
-  background: linear-gradient(135deg, #1B2030 0%, #2A3040 100%);
+  background: linear-gradient(135deg, #1B2030 0%, #2A3040 100%), url('/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
   color: white;
   min-height: 80vh;
 }
