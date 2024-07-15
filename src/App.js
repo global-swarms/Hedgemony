@@ -22,9 +22,9 @@ function App() {
       <footer className="footer">
         <div className="logo-text">
           <img src={logo} alt="Logo" className="small-logo" />
-          <span>Next Gen Defi Aggregator on Monad</span>
+          <span>| Next Gen Defi Aggregator on Monad</span>
         </div>
-        <p>&copy; 2023 Hedgemony. All rights reserved.</p>
+        <p>&copy; 2024 Hedgemony. All rights reserved.</p>
       </footer>
     </div>
   );
