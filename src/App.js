@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 4000); // Change word every 4 seconds
+    }, 3000); // Change word every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
