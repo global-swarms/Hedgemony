@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import logo from './logo.svg';
-import Typed from 'react-typed';
 
 function App() {
   return (
@@ -18,12 +17,9 @@ function App() {
       <main>
         <section className="hero">
           <h1>
-            <Typed
-              strings={['Trade', 'Hedge', 'Automate']}
-              typeSpeed={150}
-              backSpeed={50}
-              loop
-            />
+            <span className="typing-effect">Trade</span>
+            <span className="typing-effect">Hedge</span>
+            <span className="typing-effect">Automate</span>
           </h1>
           <h2>User-Optimized Swap & Yield Aggregation</h2>
           <p>Navigate Volatility with Simplicity & Precision</p>
