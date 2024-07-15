@@ -37,7 +37,7 @@
   background-size: cover;
   background-position: center;
   text-align: left;
-  color: #D1C5F5BF;
+  color: white; /* Adjust text color to be visible on the background */
 }
 
 .hero h1 {
@@ -55,9 +55,6 @@
   white-space: nowrap;
   letter-spacing: .15em;
   animation: blink-caret .75s step-end infinite;
-  background: linear-gradient(90deg, #F386FF 0%, #FCE3FF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 @keyframes blink-caret {
@@ -94,7 +91,7 @@
 
 .footer {
   padding: 50px;
-  background-image: url('/path/to/footer-background.jpg');
+  background-color: #2f142f;
   background-size: cover;
   background-position: center;
   color: white; /* Adjust text color to be visible on the background */
