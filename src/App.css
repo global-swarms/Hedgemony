@@ -48,27 +48,15 @@
 
 .typing-effect {
   overflow: hidden;
-  border-right: .15em ;
+  border-right: .15em solid orange;
   white-space: nowrap;
   letter-spacing: .15em;
-  width: 0;
-}
-
-.typing-effect.active {
-  animation: 
-    typing 3.5s,
-    blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  animation: blink-caret .75s step-end infinite;
 }
 
 @keyframes blink-caret {
-  0% { border-color: transparent; }
+  from, to { border-color: transparent }
   50% { border-color: orange; }
-  100% { border-color: transparent; }
 }
 
 .hero h2 {
