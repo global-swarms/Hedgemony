@@ -7,9 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-image: url(/Users/anthonyawoyele/hedgemony/public/hero-background.jpg);
-  background-size: cover;
-  background-position: center;
+  background: transparent;
   position: sticky;
   top: 0;
   z-index: 1000;
