@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import logo from './logo.svg';
 
 function App() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const words = ['Trade', 'Hedge', 'Automate'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 4000); // Change word every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +28,14 @@ function App() {
       <main>
         <section className="hero">
           <h1>
-            <span className="typing-effect">Trade</span>
-            <span className="typing-effect">Hedge</span>
-            <span className="typing-effect">Automate</span>
+            {words.map((word, index) => (
+              <span
+                key={word}
+                className={`typing-effect ${index === activeIndex ? 'active' : ''}`}
+              >
+                {word}
+              </span>
+            ))}
           </h1>
           <h2>User-Optimized Swap & Yield Aggregation</h2>
           <p>Navigate Volatility with Simplicity & Precision</p>
