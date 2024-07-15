@@ -1,8 +1,14 @@
 import React from 'react';
 
 const Hero = () => {
+  const heroStyle = {
+    backgroundImage: "url('/hero-background.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  };
+
   return (
-    <section className="hero">
+    <section className="hero" style={heroStyle}>
       <div className="hero-content">
         <h1>Hedgemony</h1>
         <h2>User-Optimized Swap & Yield Aggregation</h2>
