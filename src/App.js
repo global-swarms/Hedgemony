@@ -3,16 +3,37 @@ import './App.css';
 import logo from './logo.svg';
 
 function App() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [text, setText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
   const words = ['Trade', 'Hedge', 'Automate'];
+  const deletingSpeed = 100;
+  const waitTime = 1000;
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 3000); // Change word every 3 seconds
+    let timer = setTimeout(() => {
+      handleType();
+    }, typingSpeed);
 
-    return () => clearInterval(interval);
-  }, []);
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, loopNum]);
+
+  const handleType = () => {
+    const i = loopNum % words.length;
+    const fullText = words[i];
+
+    setText(isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1));
+
+    if (!isDeleting && text === fullText) {
+      setTimeout(() => setIsDeleting(true), waitTime);
+    } else if (isDeleting && text === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+    }
+
+    setTypingSpeed(isDeleting ? deletingSpeed : 150);
+  };
 
   return (
     <div className="App">
@@ -28,14 +49,7 @@ function App() {
       <main>
         <section className="hero">
           <h1>
-            {words.map((word, index) => (
-              <span
-                key={word}
-                className={`typing-effect ${index === activeIndex ? 'active' : ''}`}
-              >
-                {word}
-              </span>
-            ))}
+            <span className="typing-effect">{text}</span>
           </h1>
           <h2>User-Optimized Swap & Yield Aggregation</h2>
           <p>Navigate Volatility with Simplicity & Precision</p>
