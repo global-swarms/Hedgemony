@@ -25,7 +25,6 @@ const App = () => {
           <div></div>
           <div></div>
         </div>
-        <a href="#" className="btn">Coming Soon</a>
       </header>
       
       <main>
