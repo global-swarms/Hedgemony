@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import logo from './logo.svg';
 import Hero from './components/Hero';
@@ -10,13 +10,9 @@ const App = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-function App() {
-
-
-
   return (
     <div className="App">
-        <header className="App-header">
+      <header className="App-header">
         <img src={logo} className="App-logo" alt="Company logo" />
         <nav className={isMenuOpen ? 'active' : ''}>
           <a href="https://hedgemony.gitbook.io/hedgemony/protocol-map-and-example" className="nav-link">How it works</a>
@@ -35,7 +31,7 @@ function App() {
         <Hero />
       </main>
       <footer className="footer">
-      <h2>Website under contruction</h2>
+        <h2>Website under construction</h2>
         <div className="logo-text">
           <img src={logo} alt="Logo" className="small-logo" />
           <span>| Next Gen Defi Aggregator on Monad</span>
@@ -44,7 +40,6 @@ function App() {
       </footer>
     </div>
   );
-}
-}
+};
 
 export default App;
