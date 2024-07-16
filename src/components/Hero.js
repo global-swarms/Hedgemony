@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import heroImage from '../assets/hero-image.svg';
 import logo from '../logo.svg';
-import { FaTelegram, FaDiscord, FaTwitter } from 'react-icons/fa';
+import { FaTelegram, FaDiscord } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Hero = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -50,19 +51,20 @@ const Hero = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <nav className={menuActive ? 'active' : ''}>
-          
-          <div className="social-buttons">
-            <a href="https://t.me/YourTelegramLink" className="social-btn" target="_blank" rel="noopener noreferrer">
-              <FaTelegram />
-            </a>
-            <a href="https://discord.gg/YourDiscordLink" className="social-btn" target="_blank" rel="noopener noreferrer">
-              <FaDiscord />
-            </a>
-            <a href="https://twitter.com/YourTwitterHandle" className="social-btn" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
+          <div className="nav-content">
+            <div className="social-buttons">
+              <a href="https://t.me/YourTelegramLink" className="social-btn" target="_blank" rel="noopener noreferrer">
+                <FaTelegram />
+              </a>
+              <a href="https://discord.gg/YourDiscordLink" className="social-btn" target="_blank" rel="noopener noreferrer">
+                <FaDiscord />
+              </a>
+              <a href="https://twitter.com/YourTwitterHandle" className="social-btn" target="_blank" rel="noopener noreferrer">
+                <FaXTwitter />
+              </a>
+            </div>
+            <button className="btn coming-soon-btn">Coming Soon</button>
           </div>
-          <button className="btn coming-soon-btn">Coming Soon</button>
         </nav>
         <div className="hamburger" onClick={toggleMenu}>
           <div></div>
