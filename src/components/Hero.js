@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import heroImage from '../assets/hero-image.svg';
+import logo from '../logo.svg';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -44,7 +45,7 @@ const Hero = () => {
   return (
     <>
       <header className="App-header">
-        <img src={heroImage} className="App-logo" alt="Company logo" />
+        <img src={logo} className="App-logo" alt="Company logo" />
         <nav className={isMenuOpen ? 'active' : ''}>
           <a href="#" className="nav-link">Products</a>
           <a href="#" className="nav-link">Developers</a>
@@ -66,7 +67,7 @@ const Hero = () => {
             <h2>User-Optimized Swap & Yield Aggregation</h2>
             <p>Navigate Volatility with Simplicity & Precision</p>
             <div className="hero-buttons">
-              <a href="https://hedgemony.gitbook.io/" className="btn">Documentation</a>
+              <a href="https://hedgemony.gitbook.io/" className="btn" target="_blank" rel="noopener noreferrer">Documentation</a>
             </div>
           </div>
           <div className="hero-image">
