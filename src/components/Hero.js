@@ -50,10 +50,7 @@ const Hero = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <nav className={menuActive ? 'active' : ''}>
-          <a href="#" className="nav-link">Home</a>
-          <a href="#" className="nav-link">About</a>
-          <a href="#" className="nav-link">Services</a>
-          <a href="#" className="nav-link">Contact</a>
+          
           <div className="social-buttons">
             <a href="https://t.me/YourTelegramLink" className="social-btn" target="_blank" rel="noopener noreferrer">
               <FaTelegram />
