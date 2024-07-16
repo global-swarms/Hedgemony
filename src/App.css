@@ -72,6 +72,15 @@ nav {
   .hamburger {
     display: flex;
   }
+
+  .App-header .btn {
+    display: none;
+  }
+
+  nav .btn {
+    display: inline-block;
+    margin-top: 10px;
+  }
 }
 
 .btn {
