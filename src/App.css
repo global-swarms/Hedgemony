@@ -212,6 +212,31 @@ nav {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #5A06A7, #420477);
+  color: #FDEECF;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-btn:hover {
+  background: linear-gradient(45deg, #B9121C, #6D0000);
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -233,8 +258,18 @@ nav {
     font-size: 0.8em;
   }
 
-  .hero-buttons .btn:nth-child(2) {
-    display: none;
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .social-buttons {
+    margin-bottom: 10px;
+  }
+
+  .social-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
   }
 }
 
