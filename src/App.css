@@ -27,7 +27,7 @@ nav {
 }
 
 .nav-link {
-  color: white;
+  color: #FDEECF;
   text-decoration: none;
   padding: 5px 10px;
 }
@@ -43,30 +43,26 @@ nav {
   }
 }
 
-.soon-button {
+.btn {
+  background: linear-gradient(45deg, #5A06A7, #420477);
+  color: #FDEECF;
+  border: none;
   padding: 10px 20px;
-  color: #fdf0d5;
-  border-radius: 10px;
+  text-align: center;
   text-decoration: none;
-  font-weight: bold;
-  background-color:  #c0131e;
-  border: 1px solid #c0131e ;
-  transition: all 0.3s ease;
-}
-.soon-button:hover {
-  background: transparent;
-  color: #fdf0d5;
-  border: 1px solid #c0131e ;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease;
 }
 
-.soon-button-primary {
-  
-  color: #fdf0d5;
+.btn:hover {
+  background: linear-gradient(45deg, #B9121C, #6D0000);
+  color: #FDEECF;
 }
 
-.soon-button-primary:hover {
-  background: linear-gradient(90deg, #F386FF 0%, #FCE3FF 100%);
-}
 .hero {
   position: relative;
   display: flex;
@@ -74,10 +70,10 @@ nav {
   justify-content: center;
   align-items: flex-start;
   padding: 100px 5% 50px;
-  background: url('./hero-background.jpg');
+  background:  url('./hero-background.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
+  color: #FDEECF;
   min-height: 80vh;
 }
 
@@ -93,23 +89,31 @@ nav {
 
 .hero h1.typing-text {
   font-size: 3em;
-  background: linear-gradient(90deg, #F386FF 0%, #FCE3FF 100%);
+  background: linear-gradient(45deg, #5A06A7, #FDEECF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 0;
 }
 
+
+
 .hero h2 {
   font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #D1C5F5BF;
+  font-weight: bold;
+  margin: 16px 0;
+  line-height: 1.2;
+  color: #FDEECF;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
   font-size: 1em;
-  margin-bottom: 20px;
-  color: #D1C5F5BF;
+  font-weight: normal;
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #FDEECF;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -136,31 +140,6 @@ nav {
   flex-wrap: wrap;
 }
 
-.btn {
-  padding: 12px 24px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid #F386FF;
-  background-color: transparent;
-  transition: all 0.3s ease;
-  font-size: 0.9em;
-}
-
-.btn:hover {
-  background: linear-gradient(90deg, #F386FF 0%, #FCE3FF 100%);
-  color: white;
-  border-color: transparent;
-}
-
-.btn-primary {
-  color: white;
-}
-
-.btn-primary:hover {
-  background: linear-gradient(90deg, #F386FF 0%, #FCE3FF 100%);
-}
-
 .hero-image {
   max-width: 100%;
   margin-top: 30px;
@@ -175,8 +154,8 @@ nav {
 
 .footer {
   padding: 20px;
-  background-color: #1B2030;
-  color: white;
+  background-color: #150d18;
+  color: #FDEECF;
 }
 
 .logo-text {
