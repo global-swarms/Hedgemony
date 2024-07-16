@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import heroImage from './hero-image.svg';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -44,11 +45,18 @@ const Hero = () => {
         <h2>User-Optimized Swap & Yield Aggregation</h2>
         <p>Navigate Volatility with Simplicity & Precision</p>
         <div className="hero-buttons">
-          <a href="#" className="btn btn-primary">Documentation</a>
+          <a href="https://hedgemony.gitbook.io/" className="btn">Documentation</a>
         </div>
       </div>
       <div className="hero-image">
-        {/* Add an image or animation here */}
+        {/* hero-image*/}
+        <img src={heroImage} alt="hero-image" height="200" />
+        <svg
+        src={require('./hero-image.svg')}
+        alt="Trees"
+        height="200"
+      />
+
       </div>
     </section>
   );
