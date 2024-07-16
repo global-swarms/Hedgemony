@@ -208,6 +208,10 @@ nav {
     padding: 10px 20px;
     font-size: 0.8em;
   }
+
+  .hero-buttons .btn:nth-child(2) {
+    display: none;
+  }
 }
 
 .footer {
