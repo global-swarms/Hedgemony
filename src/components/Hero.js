@@ -53,13 +53,13 @@ const Hero = () => {
         <nav className={menuActive ? 'active' : ''}>
           <div className="nav-content">
             <div className="social-buttons">
-              <a href="https://t.me/YourTelegramLink" className="social-btn" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/hedgemony" className="social-btn" target="_blank" rel="noopener noreferrer">
                 <FaTelegram />
               </a>
-              <a href="https://discord.gg/YourDiscordLink" className="social-btn" target="_blank" rel="noopener noreferrer">
+              <a href="https://discord.gg/hedgemony" className="social-btn" target="_blank" rel="noopener noreferrer">
                 <FaDiscord />
               </a>
-              <a href="https://twitter.com/YourTwitterHandle" className="social-btn" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/hedgemony_xyz" className="social-btn" target="_blank" rel="noopener noreferrer">
                 <FaXTwitter />
               </a>
             </div>
