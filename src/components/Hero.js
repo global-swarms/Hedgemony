@@ -6,6 +6,7 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const words = ['Trade', 'Hedge', 'Automate'];
   const period = 2000;
@@ -36,24 +37,44 @@ const Hero = () => {
     }
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <section className="hero">
-      <div className="hero-container">
-        <div className="hero-content">
-          <div className="typing-container">
-            <h1 className="typing-text">{text}</h1>
+    <>
+      <header className="App-header">
+        <img src={heroImage} className="App-logo" alt="Company logo" />
+        <nav className={isMenuOpen ? 'active' : ''}>
+          <a href="#" className="nav-link">Products</a>
+          <a href="#" className="nav-link">Developers</a>
+          <a href="#" className="nav-link">Governance</a>
+          <a href="#" className="nav-link">Security</a>
+        </nav>
+        <div className="hamburger" onClick={toggleMenu}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </header>
+      <section className="hero">
+        <div className="hero-container">
+          <div className="hero-content">
+            <div className="typing-container">
+              <h1 className="typing-text">{text}</h1>
+            </div>
+            <h2>User-Optimized Swap & Yield Aggregation</h2>
+            <p>Navigate Volatility with Simplicity & Precision</p>
+            <div className="hero-buttons">
+              <a href="https://hedgemony.gitbook.io/" className="btn">Documentation</a>
+            </div>
           </div>
-          <h2>User-Optimized Swap & Yield Aggregation</h2>
-          <p>Navigate Volatility with Simplicity & Precision</p>
-          <div className="hero-buttons">
-            <a href="https://hedgemony.gitbook.io/" className="btn">Documentation</a>
+          <div className="hero-image">
+            <img src={heroImage} alt="Hero" />
           </div>
         </div>
-        <div className="hero-image">
-          <img src={heroImage} alt="Hero" />
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
