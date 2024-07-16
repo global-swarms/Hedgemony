@@ -7,7 +7,6 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const words = ['Trade', 'Hedge', 'Automate'];
   const period = 2000;
@@ -38,26 +37,11 @@ const Hero = () => {
     }
   };
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+
 
   return (
     <>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="Company logo" />
-        <nav className={isMenuOpen ? 'active' : ''}>
-          <a href="#" className="nav-link">Products</a>
-          <a href="#" className="nav-link">Developers</a>
-          <a href="#" className="nav-link">Governance</a>
-          <a href="#" className="nav-link">Security</a>
-        </nav>
-        <div className="hamburger" onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </header>
+   
       <section className="hero">
         <div className="hero-container">
           <div className="hero-content">

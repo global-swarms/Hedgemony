@@ -14,7 +14,6 @@
   right: 0;
   z-index: 2000;
   flex-wrap: wrap;
-  background-color: rgba(21, 13, 24, 0.9);
 }
 
 .App-logo {
@@ -38,6 +37,7 @@ nav {
   .coming-soon-btn {
     position: absolute;
     right: 20px;
+
   }
 }
 
@@ -95,7 +95,7 @@ nav {
     display: inline-block;
     margin-top: 10px;
     width: auto;
-    align-self: flex-start;
+    align-self: flex-center;
   }
 }
 
@@ -172,8 +172,6 @@ nav {
   margin: 0;
 }
 
-
-
 .hero h2 {
   font-size: 1.5em;
   font-weight: bold;
@@ -227,7 +225,7 @@ nav {
   }
 
   .hero-image {
-    width: 100%;
+    width: 60%;
   }
 
   .btn {

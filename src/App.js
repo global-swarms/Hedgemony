@@ -15,11 +15,10 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="Company logo" />
         <nav className={isMenuOpen ? 'active' : ''}>
-          <a href="https://hedgemony.gitbook.io/hedgemony/protocol-map-and-example" className="nav-link">How it works</a>
-          <a href="https://hedgemony.gitbook.io/hedgemony/glossary-of-key-terms" className="nav-link">Key Terms</a>
-          <a href="https://hedgemony.gitbook.io/hedgemony/hedgemony-foundation" className="nav-link">Governance</a>
-        </nav>
-        <a href="#" className="btn coming-soon-btn">Coming Soon</a>
+          
+          <a href="#" className="btn coming-soon-btn">Coming Soon</a>
+           </nav>
+        
         <div className="hamburger" onClick={toggleMenu}>
           <div></div>
           <div></div>
@@ -31,7 +30,6 @@ const App = () => {
         <Hero />
       </main>
       <footer className="footer">
-        <h2>Website under construction</h2>
         <div className="logo-text">
           <img src={logo} alt="Logo" className="small-logo" />
           <span>| Next Gen Defi Aggregator on Monad</span>
