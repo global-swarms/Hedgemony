@@ -27,10 +27,18 @@ nav {
   flex-wrap: wrap;
   flex-grow: 1;
   justify-content: center;
+  align-items: center;
 }
 
 .coming-soon-btn {
   margin-left: auto;
+}
+
+@media (min-width: 769px) {
+  .coming-soon-btn {
+    position: absolute;
+    right: 20px;
+  }
 }
 
 .nav-link {
@@ -86,6 +94,8 @@ nav {
   nav .coming-soon-btn {
     display: inline-block;
     margin-top: 10px;
+    width: auto;
+    align-self: flex-start;
   }
 }
 
