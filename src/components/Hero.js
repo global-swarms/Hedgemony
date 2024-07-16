@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import heroImage from './hero-image.svg';
+import heroImage from '../assets/hero-image.svg';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -49,14 +49,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-image">
-        {/* hero-image*/}
-        <img src={heroImage} alt="hero-image" height="200" />
-        <svg
-        src={require('./hero-image.svg')}
-        alt="Trees"
-        height="200"
-      />
-
+        <img src={heroImage} alt="Hero" height="200" />
       </div>
     </section>
   );
