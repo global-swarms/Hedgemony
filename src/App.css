@@ -25,6 +25,12 @@ nav {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.coming-soon-btn {
+  margin-left: auto;
 }
 
 .nav-link {
@@ -73,11 +79,11 @@ nav {
     display: flex;
   }
 
-  .App-header .btn {
+  .coming-soon-btn {
     display: none;
   }
 
-  nav .btn {
+  nav .coming-soon-btn {
     display: inline-block;
     margin-top: 10px;
   }
