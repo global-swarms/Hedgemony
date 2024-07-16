@@ -38,18 +38,20 @@ const Hero = () => {
 
   return (
     <section className="hero">
-      <div className="hero-content">
-        <div className="typing-container">
-          <h1 className="typing-text">{text}</h1>
+      <div className="hero-container">
+        <div className="hero-content">
+          <div className="typing-container">
+            <h1 className="typing-text">{text}</h1>
+          </div>
+          <h2>User-Optimized Swap & Yield Aggregation</h2>
+          <p>Navigate Volatility with Simplicity & Precision</p>
+          <div className="hero-buttons">
+            <a href="https://hedgemony.gitbook.io/" className="btn">Documentation</a>
+          </div>
         </div>
-        <h2>User-Optimized Swap & Yield Aggregation</h2>
-        <p>Navigate Volatility with Simplicity & Precision</p>
-        <div className="hero-buttons">
-          <a href="https://hedgemony.gitbook.io/" className="btn">Documentation</a>
+        <div className="hero-image">
+          <img src={heroImage} alt="Hero" />
         </div>
-      </div>
-      <div className="hero-image">
-        <img src={heroImage} alt="Hero" height="200" />
       </div>
     </section>
   );
